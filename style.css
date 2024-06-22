@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  height: 100vh;
+}
+
+main {
+  display: grid;
+  height: 450px;
+  grid-template-columns: repeat(3, 275px);
+  color: white;
+  margin: auto;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+
+.sedans {
+  background-color: var(--Bright-orange);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.sedans-button {
+  color: var(--Bright-orange);
+}
+
+.suvs {
+  background-color: var(--Dark-cyan);
+}
+
+.suvs-button {
+  color: var(--Dark-cyan);
+}
+
+.luxury {
+  background-color: var(--Very-dark-cyan);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.luxury-button {
+  color: var(--Very-dark-cyan);
+}
+
+img {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+article {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+button {
+  padding: 14px 25px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 600;
+  margin-top: 75px;
+  background-color: white;
+  border: none;
+  border-radius: 25px;
+}
+
+@media screen and (max-width: 880px) {
+  main {
+    display: grid;
+    height: 450px;
+    grid-template-columns: 275px;
+    color: white;
+    margin: auto;
+  }
+  button {
+    padding: 14px 25px;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+  }
+  .sedans {
+    background-color: var(--Bright-orange);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0px;
+  }
+  .luxury {
+    background-color: var(--Very-dark-cyan);
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8PX;
+    margin-bottom: 50PX;
+  }
+}
